@@ -1,38 +1,139 @@
-@import url('https://fonts.cdnfonts.com/css/cooper-black');
-
+@import url('https://fonts.cdnfonts.com/css/default-sans');
+@import url('https://fonts.cdnfonts.com/css/regisha');
 
 :root {
     --clr-primary-200: #F3EED9;
     --clr-primary-400: #302c2a;
-    --clr-highlight: #bc684c;
+    --clr-highlight: #6d82b5;
 
     --clr-neutral-100: #FFF;
     --clr-neutral-900: #222C2A;
 
-    --ff-primary: 'Roboto', sans-serif;
-    --ff-accent: 'Cooper Black', sans-serif;
+    --ff-primary: 'Default Sans', sans-serif;
+    --ff-accent: 'Regisha', sans-serif;
 }
 
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+
+
+
+
+
+
+
+/*start here------------------------------------------------*/
+
+
+
 body {
     font-family: var(--ff-primary);
-    font-weight: 400;
     font-size: 1.3125rem;
     line-height: 1.6;
 }
 
-body,
-h1,
-h2,
-h3,
-p {
-    margin: 0;
+
+.navigation {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+    justify-content: center;
+    position: fixed;
+    border-bottom: .09em solid #222C2A;
+    background-color: #e9cdc6;
+    width: 100%;
 }
+
+
+.text-center {
+    text-align: center;
+}
+
+
+
 
 
 h1,
@@ -41,53 +142,33 @@ h3 {
     color: var(--clr-primary-400);
     font-family: var(--ff-accent);
     font-weight: 500;
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: 1em;
+
 }
+
 
 .special-text {
     color: var(--clr-highlight);
     font-family: var(--ff-accent);
     font-weight: 500;
     line-height: 1;
-    margin-bottom: 1em;
 }
 
-h2,
-h3,
+
 p {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
 
-.text-center {
-    text-align: center;
-}
-
-.pad-add {
-    padding: 1em;
-}
-
-header,
-section {
-    padding: 3rem 0;
-}
 
 .container {
     margin-inline: auto;
-    width: min(90%, 70.5rem)
+    width: min(90%, 70.5rem);
 }
 
-@media (min-width: 40em) {
-
-    header,
-    section {
-        padding: 4rem 0;
-    }
+.header {
+    padding-top: 5em;
 }
 
 .split {
@@ -95,7 +176,13 @@ section {
     flex-direction: column;
 }
 
+.margin-add {
+    padding-bottom: 2em;
+}
+
 @media (min-width: 40em) {
+
+
     .split {
         flex-direction: row;
     }
@@ -107,30 +194,4 @@ section {
     .split>*+* {
         margin-left: 2em;
     }
-}
-
-.container--narrow {
-    max-width: 35rem;
-}
-
-.bg-light {
-    background-color: var(--clr-primary-200);
-}
-
-.bg-primary {
-    color: var(--clr-neutral-900);
-    background-color: var(--clr-neutral-100);
-
-}
-
-.bg-dark {
-    color: var(--clr-primary-);
-    /* background-color: var(--clr-neutral-900); */
-
-}
-
-
-.bg-primary h2,
-.bg-dark h2 {
-    color: var(--clr-primary-400)
 }
