@@ -1,0 +1,119 @@
+@import url('https://fonts.cdnfonts.com/css/shippori-mincho');
+@import url('https://fonts.cdnfonts.com/css/regisha');
+
+
+
+
+
+:root {
+    --clr-primary-200: #F3EED9;
+    --clr-primary-400: #302c2a;
+    --clr-highlight: #c79c24;
+
+    --clr-neutral-100: #FFF;
+    --clr-neutral-900: #222C2A;
+
+    --ff-primary: 'Shippori Mincho', sans-serif;
+
+
+    --ff-accent: 'Regisha', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin-inline: auto;
+    width: min(60%, 70.5rem);
+}
+
+
+
+.container-right {
+    margin-inline: auto;
+    width: min(80%, 70.5rem);
+
+
+}
+
+.right-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+body {
+
+    font-family: var(--ff-primary);
+    font-weight: 10;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--clr-primary-400);
+    font-family: var(--ff-accent);
+    font-weight: 500;
+    line-height: 1;
+    /* margin-bottom: 1em; */
+}
+
+h1 {
+
+    font-size: 3.5rem;
+}
+
+.header {
+    margin-top: 15rem;
+    margin-bottom: 14rem;
+}
+
+
+.special-text {
+    color: var(--clr-highlight);
+    font-family: var(--ff-accent);
+    font-weight: 500;
+    line-height: 1;
+    /* margin-bottom: 1em; */
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (min-width: 40em) {
+    .container {
+        margin-inline: auto;
+        width: min(80%, 70.5rem);
+    }
+
+    .split {
+        flex-direction: row;
+    }
+
+    .split>* {
+        flex-basis: 100%
+    }
+
+    .split>*+* {
+        margin-left: 2em;
+    }
+}
+
+section {
+    max-width: 50%;
+    margin-bottom: 5em;
+}
+
+.text-center {
+    text-align: center;
+}
