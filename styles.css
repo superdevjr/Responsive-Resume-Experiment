@@ -4,7 +4,7 @@
 :root {
     --clr-primary-200: #F3EED9;
     --clr-primary-400: #302c2a;
-    --clr-highlight: #4baaae;
+    --clr-highlight: #50668f;
 
     --clr-neutral-100: #FFF;
     --clr-neutral-900: #222C2A;
@@ -165,9 +165,13 @@ a:focus {
     width: 100%;
     background-color: #ab6dae;
     padding-top: 1em;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
     border-top: .09em solid #222C2A;
 
+}
+
+.less-marg {
+    margin-bottom: .3em;
 }
 
 h1,
