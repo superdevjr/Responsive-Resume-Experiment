@@ -4,7 +4,7 @@
 :root {
     --clr-primary-200: #F3EED9;
     --clr-primary-400: #302c2a;
-    --clr-highlight: #6d82b5;
+    --clr-highlight: #4baaae;
 
     --clr-neutral-100: #FFF;
     --clr-neutral-900: #222C2A;
@@ -113,8 +113,15 @@ body {
     font-family: var(--ff-primary);
     font-size: 1.3125rem;
     line-height: 1.6;
+    color: var(--clr-primary-400)
 }
 
+img {
+    margin: auto;
+    margin-bottom: 2em;
+    border: .1em solid #222C2A;
+    max-width: 75%;
+}
 
 .navigation {
     display: flex;
@@ -123,8 +130,9 @@ body {
     justify-content: center;
     position: fixed;
     border-bottom: .09em solid #222C2A;
-    background-color: #e9cdc6;
+    background-color: #ab6dae;
     width: 100%;
+    font-weight: bolder;
 }
 
 
@@ -132,9 +140,35 @@ body {
     text-align: center;
 }
 
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a:link {
+    color: var(--clr-primary-400);
+}
+
+a:visited {
+    color: rgb(214, 189, 65);
+}
+
+a:focus {
+    border-bottom: 1px solid;
+    background: #bfd8d9;
+}
 
 
 
+
+.contact-section {
+    width: 100%;
+    background-color: #ab6dae;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    border-top: .09em solid #222C2A;
+
+}
 
 h1,
 h2,
@@ -155,12 +189,24 @@ h3 {
     line-height: 1;
 }
 
+.special-text2 {
+    color: rgb(214, 189, 65)
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+}
 
 p {
     margin-bottom: 2em;
 }
 
 
+
+.big-font {
+    font-size: 1.2em;
+}
 
 .container {
     margin-inline: auto;
@@ -180,7 +226,7 @@ p {
     padding-bottom: 2em;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 80em) {
 
 
     .split {
