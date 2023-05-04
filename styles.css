@@ -1,16 +1,19 @@
-@import url('https://fonts.cdnfonts.com/css/default-sans');
-@import url('https://fonts.cdnfonts.com/css/regisha');
+@import url("https://fonts.cdnfonts.com/css/default-sans");
+@import url("https://fonts.cdnfonts.com/css/regisha");
 
 :root {
-    --clr-primary-200: #F3EED9;
-    --clr-primary-400: #302c2a;
-    --clr-highlight: #50668f;
+  --clr-primary-200: #f3eed9;
+  --clr-primary-400: #302c2a;
+  --clr-highlight: #ffa3af;
+  --clr-highlight-2: #007cbe;
 
-    --clr-neutral-100: #FFF;
-    --clr-neutral-900: #222C2A;
+  --clr-head-foot: #ffd639;
 
-    --ff-primary: 'Default Sans', sans-serif;
-    --ff-accent: 'Regisha', sans-serif;
+  --clr-neutral-100: #fff;
+  --clr-neutral-900: #222c2a;
+
+  --ff-primary: "Default Sans", sans-serif;
+  --ff-accent: "Regisha", sans-serif;
 }
 
 /*
@@ -19,14 +22,14 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*
     2. Remove default margin
   */
 * {
-    margin: 0;
+  margin: 0;
 }
 
 /*
@@ -34,7 +37,7 @@
   */
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 /*
@@ -43,8 +46,8 @@ body {
     5. Improve text rendering
   */
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -55,8 +58,8 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /*
@@ -66,7 +69,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /*
@@ -79,169 +82,148 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-
 
 /*
     9. Create a root stacking context
   */
 #root,
 #__next {
-    isolation: isolate;
+  isolation: isolate;
 }
-
-
-
-
-
-
-
-
 
 /*start here------------------------------------------------*/
 
-
-
 body {
-    font-family: var(--ff-primary);
-    font-size: 1.3125rem;
-    line-height: 1.6;
-    color: var(--clr-primary-400)
+  font-family: var(--ff-primary);
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  color: var(--clr-primary-400);
 }
 
 img {
-    margin: auto;
-    margin-bottom: 2em;
-    border: .1em solid #222C2A;
-    max-width: 75%;
+  margin: auto;
+  margin-bottom: 2em;
+  margin-top: -1em;
+  border: 0.1em solid #222c2a;
+  max-width: 75%;
 }
 
 .navigation {
-    display: flex;
-    gap: 1em;
-    padding: 1em;
-    justify-content: center;
-    position: fixed;
-    border-bottom: .09em solid #222C2A;
-    background-color: #ab6dae;
-    width: 100%;
-    font-weight: bolder;
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  justify-content: center;
+  position: fixed;
+  border-bottom: 0.09em solid #222c2a;
+  background-color: var(--clr-head-foot);
+  width: 100%;
+  font-weight: bolder;
 }
 
-
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 a {
-    outline: none;
-    text-decoration: none;
+  outline: none;
+  text-decoration: none;
 }
 
 a:link {
-    color: var(--clr-primary-400);
+  color: var(--clr-primary-400);
 }
 
 a:visited {
-    color: rgb(214, 189, 65);
+  color: var(--clr-highlight-2);
 }
 
 a:focus {
-    border-bottom: 1px solid;
-    background: #bfd8d9;
+  border-bottom: 1px solid;
+  background: #bfd8d9;
 }
 
-
-
-
 .contact-section {
-    width: 100%;
-    background-color: #ab6dae;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-top: .09em solid #222C2A;
-
+  width: 100%;
+  background-color: var(--clr-head-foot);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 0.09em solid #222c2a;
 }
 
 .less-marg {
-    margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
 
 h1,
 h2,
 h3 {
-    color: var(--clr-primary-400);
-    font-family: var(--ff-accent);
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 1em;
-
+  color: var(--clr-primary-400);
+  font-family: var(--ff-accent);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1em;
 }
 
-
 .special-text {
-    color: var(--clr-highlight);
-    font-family: var(--ff-accent);
-    font-weight: 500;
-    line-height: 1;
+  color: var(--clr-highlight);
+  font-family: var(--ff-accent);
+  font-weight: 500;
+  line-height: 1;
 }
 
 .special-text2 {
-    color: rgb(214, 189, 65)
+  color: var(--clr-highlight-2);
 }
 
 .stack {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 p {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
-
-
 .big-font {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .container {
-    margin-inline: auto;
-    width: min(90%, 70.5rem);
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
 }
 
 .header {
-    padding-top: 5em;
+  padding-top: 5em;
 }
 
 .split {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .margin-add {
-    padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 
 @media (min-width: 80em) {
+  .split {
+    flex-direction: row;
+  }
 
+  .split > * {
+    flex-basis: 100%;
+  }
 
-    .split {
-        flex-direction: row;
-    }
-
-    .split>* {
-        flex-basis: 100%
-    }
-
-    .split>*+* {
-        margin-left: 2em;
-    }
+  .split > * + * {
+    margin-left: 2em;
+  }
 }
